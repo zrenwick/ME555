@@ -1,0 +1,28 @@
+% Armijo line search
+function a = lineSearch(f,g,H,x,opt)
+    t = 0.3; % scale factor on current gradient: [0.01, 0.3]
+    b = 0.1; % scale factor on backtracking: [0.1, 0.8]
+    a = 1e-3; % maximum step length
+    G = g(x);
+    
+    if strcmp(opt.alg,'gradient')
+        D = ***;  % Direction for gradinet method
+    elseif strcmp(opt.alg,'newton')
+%         D = ***;  % Direction for Newton method
+    end
+    
+    % terminate if line search takes too long
+    count = 0;
+    while count<100
+        % stop if condition satisfied
+        % write stop as a boolian expression
+%         stop = *** < ***;
+        if stop;
+            break;
+        else
+            % backtracking
+%             a = ***
+            % increase counter by 1
+            % count = ***
+        end
+    end
